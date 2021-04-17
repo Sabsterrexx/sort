@@ -147,7 +147,7 @@ void selectionSort(std::vector<int>&vec){
 } 
 
 //yes (vec,0,9)
-void quickSort(std::vector<int>&vec, int low, int high){
+std::vector<int> quickSort(std::vector<int>&vec, int low, int high){
 
     if (low < high){
         /* pi is partitioning index, arr[p] is now
@@ -162,6 +162,9 @@ void quickSort(std::vector<int>&vec, int low, int high){
         quickSort(vec, pi + 1, high);
 
     }
+
+    return vec;
+
 }
 
 //yes (vec,10)

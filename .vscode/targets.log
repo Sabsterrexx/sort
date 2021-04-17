@@ -1,0 +1,349 @@
+mingw32-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+mingw32-make.exe: *** No rule to make target 'all'.  Stop.
+ 
+# GNU Make 4.2.1
+# Built for x86_64-w64-mingw32
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Apr 17 14:39:03 2021
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# automatic
+?F = $(notdir $?)
+# environment
+CommonProgramFiles = C:\Program Files\Common Files
+# default
+.SHELLFLAGS := -c
+# makefile
+MAKEFLAGS = pqrR
+# environment
+VSCODE_LOG_NATIVE = false
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# automatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile
+CURDIR := c:/Users/saabi/OneDrive/Documents/C++/sort
+# default
+SHELL := sh.exe
+# environment
+ProgramFiles(x86) = C:\Program Files (x86)
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# makefile (from 'Makefile', line 8)
+CFLAGS = -Wall -g
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+SystemRoot = C:\WINDOWS
+# environment
+VSCODE_NODE_CACHED_DATA_DIR = C:\Users\saabi\AppData\Roaming\Code\CachedData\3c4e3df9e89829dce27b7b5c24508306b151f30d
+# environment
+TMP = C:\Users\saabi\AppData\Local\Temp
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+SystemDrive = C:
+# environment
+CommonProgramFiles(x86) = C:\Program Files (x86)\Common Files
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-2d3fe4be-7157-4119-a744-d94c708120bb-sock
+# environment
+VSCODE_CWD = C:\Users\saabi\AppData\Local\Programs\Microsoft VS Code
+# default
+MAKE_HOST := x86_64-w64-mingw32
+# environment
+PATH = C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Calibre2\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Users\saabi\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\saabi\AppData\Local\Programs\Python\Python38\;C:\Users\saabi\AppData\Local\Microsoft\WindowsApps;C:\Users\saabi\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\mingw-w64\x86_64-8.1.0-posix-seh-rt_v6-rev0\mingw64\bin;C:\Users\saabi\AppData\Roaming\npm
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+USERPROFILE = C:\Users\saabi
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+ComSpec = C:\WINDOWS\system32\cmd.exe
+# environment
+VSCODE_LOG_STACK = false
+# environment
+NUMBER_OF_PROCESSORS = 8
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync
+# environment
+ProgramW6432 = C:\Program Files
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_9636_GFGHZMBCJEGJESBW
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+COMPUTERNAME = SAABITPC
+# default
+.LOADED := 
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = saabi
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
+CommonProgramW6432 = C:\Program Files\Common Files
+# environment
+ProgramData = C:\ProgramData
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LOGONSERVER = \\SAABITPC
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = SAABITPC
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from 'Makefile', line 7)
+CC = g++
+# default
+MAKE_VERSION := 4.2.1
+# makefile
+.DEFAULT_GOAL := tcs
+# environment
+OneDrive = C:\Users\saabi\OneDrive
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# environment
+DriverData = C:\Windows\System32\Drivers\DriverData
+# environment
+LOCALAPPDATA = C:\Users\saabi\AppData\Local
+# default
+MAKE_COMMAND := mingw32-make.exe
+# environment
+OneDriveConsumer = C:\Users\saabi\OneDrive
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 126 Stepping 5, GenuineIntel
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\09c9854d87f1b9fa05d57298ee8c45cf-1.55.2-main-sock
+# environment
+HOMEPATH = \Users\saabi
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# environment
+PSModulePath = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# environment
+windir = C:\WINDOWS
+# automatic
++F = $(notdir $+)
+# default
+SUFFIXES := 
+# environment
+APPDATA = C:\Users\saabi\AppData\Roaming
+# environment
+TEMP = C:\Users\saabi\AppData\Local\Temp
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# automatic
+^F = $(notdir $^)
+# environment
+ProgramFiles = C:\Program Files
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 7e05
+# default
+.RECIPEPREFIX := 
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+VSCODE_PID = 9636
+# environment
+USERDOMAIN_ROAMINGPROFILE = SAABITPC
+# variable set hash-table stats:
+# Load=91/1024=9%, Rehash=0, Collisions=16/112=14%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (key c:/Users/saabi/OneDrive/Documents/C++/sort, mtime 1618643216): 21 files, no impossibilities.
+
+# 21 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+printElements.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+sort.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+catch2/catch_amalgamated.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2021-04-17 03:05:38
+#  File has been updated.
+#  Successfully updated.
+
+printElements.o: printElements.cpp printElements.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 33):
+	$(CC) $(CFLAGS) -c printElements.cpp
+
+sort.o: sort.cpp sort.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 21):
+	$(CC) $(CFLAGS) -c sort.cpp
+
+# Not a target:
+tcs.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+catch2/catch_amalgamated.hpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+tests-main.cpp: catch2/catch_amalgamated.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 30):
+	$(CC) $(CFLAGS) -c tests-main.cpp
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 36):
+	rm sort.o tcs.o tcs.exe tcs catch2.o printElements.o
+
+tcs.o: tcs.cpp sort.hpp printElements.hpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 24):
+	$(CC) $(CFLAGS) -c tcs.cpp 
+
+tcs: sort.o tcs.o catch2.o printElements.o tests-main.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 15):
+	$(CC) $(CFLAGS) -o tcs sort.o tcs.o catch2.o printElements.o tests-main.o
+
+# Not a target:
+printElements.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+catch2.o: catch2/catch_amalgamated.hpp catch2/catch_amalgamated.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 27):
+	$(CC) $(CFLAGS) -c catch2/catch_amalgamated.cpp -o catch2.o
+
+# Not a target:
+sort.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+tests-main.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=19/1024=2%, Rehash=0, Collisions=0/48=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 27 / storage = 292 B / avg = 10 B
+# current buf: size = 8162 B / used = 292 B / count = 27 / avg = 10 B
+
+# strcache performance: lookups = 56 / hit rate = 51%
+# hash-table stats:
+# Load=27/8192=0%, Rehash=0, Collisions=1/56=2%
+# Finished Make data base on Sat Apr 17 14:39:03 2021
+
+ 

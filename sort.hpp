@@ -18,7 +18,7 @@ std::vector<int> bubbleSort(std::vector<int>&vec);
 
 void selectionSort(std::vector<int>&vec);
 
-void quickSort(std::vector<int>&vec, int low, int high);
+std::vector<int> quickSort(std::vector<int>&vec, int low, int high);
 
 void insertionSort(std::vector<int>&vec, int n);
 
