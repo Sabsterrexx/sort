@@ -168,7 +168,8 @@ std::vector<int> quickSort(std::vector<int>&vec, int low, int high){
 }
 
 //yes (vec,10)
-void insertionSort(std::vector<int>&vec, int n){
+std::vector<int> insertionSort(std::vector<int>&vec, int n){
+
     int i, key, j;
     for (i = 1; i < n; i++){
         key = vec[i];
@@ -183,4 +184,6 @@ void insertionSort(std::vector<int>&vec, int n){
         }
         vec[j + 1] = key;
     }
+
+    return vec;
 }

@@ -17,11 +17,13 @@ TEST_CASE("Good to go","[vector]"){
     readFromFile("numbers-out.txt",output);
 
     input = unsorted;
-
     REQUIRE(bubbleSort(input) == output);
 
     input = unsorted;
     REQUIRE(quickSort(input,0,9) == output);
     
+
+    input = unsorted;
+    REQUIRE(insertionSort(input,10000) == output);
 }
 

@@ -20,6 +20,6 @@ void selectionSort(std::vector<int>&vec);
 
 std::vector<int> quickSort(std::vector<int>&vec, int low, int high);
 
-void insertionSort(std::vector<int>&vec, int n);
+std::vector<int> insertionSort(std::vector<int>&vec, int n);
 
 #endif
