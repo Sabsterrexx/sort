@@ -1,5 +1,0 @@
-mingw32-make.exe --dry-run --keep-going --print-directory
-mingw32-make.exe: Entering directory 'c:/Users/saabi/OneDrive/Documents/C++/sort'
-mingw32-make.exe: 'tcs' is up to date.
-mingw32-make.exe: Leaving directory 'c:/Users/saabi/OneDrive/Documents/C++/sort'
- 
