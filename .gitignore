@@ -3,3 +3,4 @@ tcs
 *.log
 *.exe
 .vscode
+benchmark
