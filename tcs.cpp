@@ -37,13 +37,13 @@ TEST_CASE("Good to go","[vector]"){
     };*/
 
     input = unsorted;
-    REQUIRE(insertionSort(input,10000) == output);
+    REQUIRE(insertionSort(input) == output);
 
-    CHECK(insertionSort(input,10000) == output);
+    CHECK(insertionSort(input) == output);
 
     BENCHMARK("Insertion Sort"){
 
-        return insertionSort(input,10000);
+        return insertionSort(input);
     };
 
 }
