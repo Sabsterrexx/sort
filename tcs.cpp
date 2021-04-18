@@ -30,4 +30,9 @@ TEST_CASE("Sorting Algorithms", "[vector]") {
     REQUIRE(insertionSort(input) == output);
   }
 
+  SECTION("Selection Sort"){
+    input = unsorted;
+    REQUIRE(selectionSort(input) == output);
+  }
+
 }

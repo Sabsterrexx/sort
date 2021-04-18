@@ -16,7 +16,7 @@ void mergeSort(std::vector<int>&vec,int l,int r);
 
 std::vector<int> bubbleSort(std::vector<int>&vec);
 
-void selectionSort(std::vector<int>&vec);
+std::vector<int> selectionSort(std::vector<int>&vec);
 
 std::vector<int> quickSort(std::vector<int>&vec);
 

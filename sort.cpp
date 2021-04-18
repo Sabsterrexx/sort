@@ -126,7 +126,7 @@ std::vector<int> bubbleSort(std::vector<int>&vec) {
 } 
 
 //yes 
-void selectionSort(std::vector<int>&vec){ 
+std::vector<int> selectionSort(std::vector<int>&vec){ 
     int size = vec.size();
     std::vector<int>output;
     int alt;
@@ -147,6 +147,8 @@ void selectionSort(std::vector<int>&vec){
     }
 
     vec = output;
+
+    return vec;
 
 } 
 
