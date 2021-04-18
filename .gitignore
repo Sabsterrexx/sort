@@ -1,2 +1,4 @@
 *.o
 tcs
+*.log
+*.exe

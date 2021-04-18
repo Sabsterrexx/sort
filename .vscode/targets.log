@@ -8,7 +8,7 @@ mingw32-make.exe: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat Apr 17 14:39:03 2021
+# Make data base, printed on Sun Apr 18 02:24:45 2021
 
 # Variables
 
@@ -203,9 +203,9 @@ USERDOMAIN_ROAMINGPROFILE = SAABITPC
 
 # Directories
 
-# . (key c:/Users/saabi/OneDrive/Documents/C++/sort, mtime 1618643216): 21 files, no impossibilities.
+# . (key c:/Users/saabi/OneDrive/Documents/C++/sort, mtime 1618727050): 24 files, no impossibilities.
 
-# 21 files, no impossibilities in 1 directories.
+# 24 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -233,15 +233,9 @@ all:
 #  File has not been updated.
 
 # Not a target:
-catch2/catch_amalgamated.cpp:
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-# Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-04-17 03:05:38
+#  Last modified 2021-04-18 02:24:06
 #  File has been updated.
 #  Successfully updated.
 
@@ -249,14 +243,14 @@ printElements.o: printElements.cpp printElements.hpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 33):
+#  recipe to execute (from 'Makefile', line 40):
 	$(CC) $(CFLAGS) -c printElements.cpp
 
 sort.o: sort.cpp sort.hpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 21):
+#  recipe to execute (from 'Makefile', line 28):
 	$(CC) $(CFLAGS) -c sort.cpp
 
 # Not a target:
@@ -271,11 +265,31 @@ catch2/catch_amalgamated.hpp:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+benchmark.cpp:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+benchmark: sort.o benchmark.o printElements.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 19):
+	$(CC) $(CFLAGS) -o benchmark benchmark.o sort.o printElements.o
+
+benchmark.o: benchmark.cpp
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 25):
+	$(CC) $(CFLAGS) -c benchmark.cpp
+
 tests-main.cpp: catch2/catch_amalgamated.hpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 30):
+#  recipe to execute (from 'Makefile', line 37):
 	$(CC) $(CFLAGS) -c tests-main.cpp
 
 # Not a target:
@@ -288,14 +302,14 @@ clean:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 36):
-	rm sort.o tcs.o tcs.exe tcs catch2.o printElements.o
+#  recipe to execute (from 'Makefile', line 43):
+	rm sort.o tcs.o tcs.exe tcs benchmark.o benchmark benchmark.exe printElements.o
 
 tcs.o: tcs.cpp sort.hpp printElements.hpp
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 24):
+#  recipe to execute (from 'Makefile', line 31):
 	$(CC) $(CFLAGS) -c tcs.cpp 
 
 tcs: sort.o tcs.o catch2.o printElements.o tests-main.o
@@ -303,7 +317,7 @@ tcs: sort.o tcs.o catch2.o printElements.o tests-main.o
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 15):
-	$(CC) $(CFLAGS) -o tcs sort.o tcs.o catch2.o printElements.o tests-main.o
+	$(CC) $(CFLAGS) -o tcs sort.o tcs.o printElements.o tests-main.o
 
 # Not a target:
 printElements.cpp:
@@ -311,12 +325,11 @@ printElements.cpp:
 #  Modification time never checked.
 #  File has not been updated.
 
-catch2.o: catch2/catch_amalgamated.hpp catch2/catch_amalgamated.cpp
+# Not a target:
+catch2.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 27):
-	$(CC) $(CFLAGS) -c catch2/catch_amalgamated.cpp -o catch2.o
 
 # Not a target:
 sort.cpp:
@@ -331,19 +344,19 @@ tests-main.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=19/1024=2%, Rehash=0, Collisions=0/48=0%
+# Load=21/1024=2%, Rehash=0, Collisions=2/52=4%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 27 / storage = 292 B / avg = 10 B
-# current buf: size = 8162 B / used = 292 B / count = 27 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 31 / storage = 317 B / avg = 10 B
+# current buf: size = 8162 B / used = 317 B / count = 31 / avg = 10 B
 
-# strcache performance: lookups = 56 / hit rate = 51%
+# strcache performance: lookups = 63 / hit rate = 50%
 # hash-table stats:
-# Load=27/8192=0%, Rehash=0, Collisions=1/56=2%
-# Finished Make data base on Sat Apr 17 14:39:03 2021
+# Load=31/8192=0%, Rehash=0, Collisions=1/63=2%
+# Finished Make data base on Sun Apr 18 02:24:45 2021
 
  

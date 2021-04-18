@@ -1,11 +1,5 @@
-mingw32-make.exe --dry-run --always-make --keep-going --print-directory
+mingw32-make.exe --dry-run --keep-going --print-directory
 mingw32-make.exe: Entering directory 'c:/Users/saabi/OneDrive/Documents/C++/sort'
-g++ -Wall -g -c sort.cpp
-g++ -Wall -g -c tcs.cpp 
-g++ -Wall -g -c catch2/catch_amalgamated.cpp -o catch2.o
-g++ -Wall -g -c printElements.cpp
-g++ -Wall -g -c tests-main.cpp
-g++    -c -o tests-main.o tests-main.cpp
-g++ -Wall -g -o tcs sort.o tcs.o catch2.o printElements.o tests-main.o
+mingw32-make.exe: 'tcs' is up to date.
 mingw32-make.exe: Leaving directory 'c:/Users/saabi/OneDrive/Documents/C++/sort'
  

@@ -1,50 +1,32 @@
-#include<vector>
-#include "catch2/catch_amalgamated.hpp"
-#include "sort.hpp"
+#include <vector>
+
+#include "catch2/catch.hpp"
 #include "printElements.hpp"
+#include "sort.hpp"
 
-std::vector<int>unsorted;
+std::vector<int> unsorted;
+std::vector<int> input;
+std::vector<int> output;
 
-std::vector<int>input;
+TEST_CASE("Sorting Algorithms", "[vector]") {
+  if (unsorted.size() == 0) {
+    readFromFile("testCases/randomNumbers3.txt", unsorted);
+    readFromFile("testCases/randomNumbers3-out.txt" , output);
+  }
 
-std::vector <int> output;
-
-
-
-TEST_CASE("Good to go","[vector]"){
-
-    readFromFile("numbers.txt",unsorted);
-    readFromFile("numbers-out.txt",output);
-
+  SECTION("Bubble Sort") {
     input = unsorted;
     REQUIRE(bubbleSort(input) == output);
+  }
 
-    CHECK(bubbleSort(input) == output);
+  SECTION("Quick Sort") {
+    input = unsorted;
+    REQUIRE(quickSort(input) == output);
+  }
 
-    BENCHMARK("Bubble Sort"){
-
-        return bubbleSort(input);
-    };
-
-    /*input = unsorted;
-    REQUIRE(quickSort(input,0,9) == output);
-    
-    CHECK(quickSort(input,0,9) == output);
-
-    BENCHMARK("Quick Sort"){
-
-        return quickSort(input,0,9);
-    };*/
-
+  SECTION("Insertion Sort") {
     input = unsorted;
     REQUIRE(insertionSort(input) == output);
-
-    CHECK(insertionSort(input) == output);
-
-    BENCHMARK("Insertion Sort"){
-
-        return insertionSort(input);
-    };
+  }
 
 }
-

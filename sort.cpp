@@ -7,6 +7,7 @@
 #include "sort.hpp"
 
 void readFromFile(const char * fName, std::vector<int>&vec){
+    vec.clear();
  	std::ifstream file(fName);
     std::string line;
     if(file.is_open() && file.good()) {
@@ -146,7 +147,6 @@ void selectionSort(std::vector<int>&vec){
     }
 } 
 
-//yes (vec,0,9)
 std::vector<int> quickSort(std::vector<int>&vec, int low, int high){
 
     if (low < high){
@@ -166,6 +166,18 @@ std::vector<int> quickSort(std::vector<int>&vec, int low, int high){
     return vec;
 
 }
+
+
+//yes (vec,0,9)
+
+std::vector<int> quickSort(std::vector<int>&vec){
+
+    return quickSort(vec,0,vec.size()-1);
+
+}
+
+
+
 
 //yes (vec,10)
 std::vector<int> insertionSort(std::vector<int>&vec){
