@@ -103,7 +103,7 @@ int partition (std::vector<int>&vec, int low, int high){
 
 
 
-//no
+//no (vec,0,vec.size()-1)
 void mergeSort(std::vector<int>&vec,int l,int r){
     if(l>=r) 
         return;//returns recursively
@@ -114,7 +114,7 @@ void mergeSort(std::vector<int>&vec,int l,int r){
     merge(vec,l,m,r);
 }
 
-//yes (vec,10)
+//yes 
 std::vector<int> bubbleSort(std::vector<int>&vec) {
     int n = vec.size(); 
     for (int i = 0; i < n-1; i++)     
@@ -125,7 +125,7 @@ std::vector<int> bubbleSort(std::vector<int>&vec) {
     return vec;
 } 
 
-//no 
+//yes 
 void selectionSort(std::vector<int>&vec){ 
     int size = vec.size();
     std::vector<int>output;
@@ -134,7 +134,7 @@ void selectionSort(std::vector<int>&vec){
     while(size > 0){
 
         for(int i = 0; i < size; i++){
-            if(vec[i] > vec[0]){
+            if(vec[i] < vec[0]){
                 alt = vec[0];
                 vec[0] = vec[i];
                 vec[i] = alt;
@@ -145,7 +145,11 @@ void selectionSort(std::vector<int>&vec){
         vec.erase(vec.begin());
         size--;
     }
+
+    vec = output;
+
 } 
+
 
 std::vector<int> quickSort(std::vector<int>&vec, int low, int high){
 
@@ -179,7 +183,7 @@ std::vector<int> quickSort(std::vector<int>&vec){
 
 
 
-//yes (vec,10)
+//yes
 std::vector<int> insertionSort(std::vector<int>&vec){
     int n = vec.size(); 
 
