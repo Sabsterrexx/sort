@@ -13,7 +13,7 @@ CFLAGS = -Wall -g
 #Final executable file is linked here:
 all: tcs benchmark
 
-tcs: sort.o tcs.o catch2.o printElements.o tests-main.o
+tcs: sort.o tcs.o printElements.o tests-main.o
 	$(CC) $(CFLAGS) -o tcs sort.o tcs.o printElements.o tests-main.o
  
 #Final executable file is linked here:

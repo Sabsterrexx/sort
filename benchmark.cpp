@@ -19,40 +19,40 @@ namespace benchmark {
         // auto ms_int = duration_cast<milliseconds>(t2 - t1);
         /* Getting number of milliseconds as a double. */
         duration<double, std::milli> ms_double = t2 - t1;
-        std::cout << title << ": ";
-        std::cout << ms_double.count() << "ms\n";
+        std::cout << title << ":\t";
+        std::cout << ms_double.count() << " ms\n";
     }
 
     void timeQuickSort() {
-        auto t1 = high_resolution_clock::now();
         input = unsorted;
+        auto t1 = high_resolution_clock::now();
         quickSort(input);
         auto t2 = high_resolution_clock::now();
-        displayTime("quickSort", t1, t2);
+        displayTime("quick", t1, t2);
     }
 
     void timeInsertionSort() {
-        auto t1 = high_resolution_clock::now();
         input = unsorted;
+        auto t1 = high_resolution_clock::now();
         insertionSort(input);
         auto t2 = high_resolution_clock::now();
-        displayTime("insertionSort", t1, t2);
+        displayTime("insertion", t1, t2);
     }
 
 
     void timeBubbleSort(){
-        auto t1 = high_resolution_clock::now();
         input = unsorted;
+        auto t1 = high_resolution_clock::now();
         bubbleSort(input);
         auto t2 = high_resolution_clock::now();
-        displayTime("bubbleSort", t1, t2);
+        displayTime("bubble", t1, t2);
     }
 
 }  
 
 int main() {
-    readFromFile("testCases/randomNumbers3.txt", unsorted);
-    readFromFile("testCases/randomNumbers3-out.txt", output);
+    readFromFile("testCases/randomNumbers1.txt", unsorted);
+    readFromFile("testCases/randomNumbers1-out.txt", output);
 
     benchmark::timeQuickSort();
     benchmark::timeInsertionSort();
