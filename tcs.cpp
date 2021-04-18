@@ -26,7 +26,7 @@ TEST_CASE("Good to go","[vector]"){
         return bubbleSort(input);
     };
 
-    input = unsorted;
+    /*input = unsorted;
     REQUIRE(quickSort(input,0,9) == output);
     
     CHECK(quickSort(input,0,9) == output);
@@ -34,7 +34,7 @@ TEST_CASE("Good to go","[vector]"){
     BENCHMARK("Quick Sort"){
 
         return quickSort(input,0,9);
-    };
+    };*/
 
     input = unsorted;
     REQUIRE(insertionSort(input,10000) == output);
