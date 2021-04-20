@@ -54,6 +54,14 @@ namespace Benchmark {
         displayTime("bubble", t1, t2);
     }
 
+    void timeMergeSort(){
+        input = unsorted;
+        auto t1 = high_resolution_clock::now();
+        mergeSort(input,0,input.size()-1);
+        auto t2 = high_resolution_clock::now();
+        displayTime("merge", t1, t2);
+    }
+
 }  
 
 
@@ -66,6 +74,7 @@ int main() {
     Benchmark::timeInsertionSort();
     Benchmark::timeBubbleSort();
     Benchmark::timeSelectionSort();
+    Benchmark::timeMergeSort();
 
     return 0;
 
