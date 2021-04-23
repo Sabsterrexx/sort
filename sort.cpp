@@ -33,8 +33,8 @@ void merge(std::vector<int>&vec, int l, int m, int r){
     int n2 = r - m;
  
     // Create temp arrays
-    std::vector<int>L;
-    std::vector<int>R;
+    std::vector<int>L(n1);
+    std::vector<int>R(n2);
 
     // Copy data to temp arrays L[] and R[]
     for (int i = 0; i < n1; i++)
@@ -90,9 +90,7 @@ int partition (std::vector<int>&vec, int low, int high){
         // If current element is smaller than the pivot
         if (vec[j] < pivot){
             i++; // increment index of smaller element
-
             swap(&vec[i], &vec[j]);
-
         }
     }
 
@@ -151,6 +149,7 @@ std::vector<int> selectionSort(std::vector<int>&vec){
     return vec;
 
 } 
+
 
 
 std::vector<int> quickSort(std::vector<int>&vec, int low, int high){

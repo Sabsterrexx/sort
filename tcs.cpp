@@ -15,6 +15,13 @@ TEST_CASE("Sorting Algorithms", "[vector]") {
     readFromFile("testCases/randomNumbers1-out.txt" , output);
   }
 
+
+  SECTION("Merge Sort") {
+    input = unsorted;
+    mergeSort(input,0,input.size()-1);
+    REQUIRE( input == output);
+  }
+
   SECTION("Bubble Sort") {
     input = unsorted;
     REQUIRE(bubbleSort(input) == output);
